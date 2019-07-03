@@ -58,5 +58,9 @@ app.use(function(err, req, res, next) {
   });
 });
 
+app.listen(app.get('port'), () => {
+  console.log(`Find the server at: http://localhost:${app.get('port')}/`); // eslint-disable-line no-console
+});
+
 
 module.exports = app;
